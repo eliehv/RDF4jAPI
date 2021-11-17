@@ -1,0 +1,50 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Making Query on RDF4j</title>
+  <style>
+body {
+  background-color: #faf2e4;
+  margin: 0 15%;
+  font-family: sans-serif;
+  }
+
+input[id = SPARQLQuery] {
+    width: 50em;  height: 20em;
+}
+input[id = Result] {
+    width: 50em;  height: 20em;
+}
+  </style>
+</head>
+
+<body> 
+<form action="query">
+<label for="RepositoryURL">Repository URL:</label>
+  <input type="url" id="RepositoryURL" name="RepositoryURL" size=50><br><br>
+  
+  <label for="RepositoryID">Repository ID:</label>
+  <input type="text" id="RepositoryID" name="RepositoryID"><br><br>
+  
+  
+    <label for="Query">SPARQL Query:</label><br><br>
+  <textarea id="SPARQLQuery" name="Query" rows="10" cols="70"></textarea><br><br>
+  
+  <input type="submit" value="Run Query"><br><br>
+  
+  
+  <div id="Result"></div><br />
+		
+  
+     
+     <!-- 
+      <label for="Result">Query Result:</label><br><br>
+      <textarea id="Result" name="Result" rows="50" cols="100"></textarea>
+      --> 
+  <!--  
+  <input type="text" id="Result" name="Result"><br><br>
+  -->
+  </form>
+</body>
+</html>
